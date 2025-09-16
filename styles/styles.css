@@ -59,28 +59,6 @@ main {
     transition: color 0.3s ease;
 }
 
-/* Hover underline effect */
-.cnav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffbf00;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.cnav-links ul li:hover::after {
-    width: 100%;
-}
-
-.cnav-links ul li a.active {
-    color: #ffbf00; /* highlight color */
-    font-weight: bold;
-    border-bottom: 2px solid #ffbf00; /* underline to match hover */
-}
-
-
 /* Home / About Us / Television Content */
 .text-box1 {
     max-width: 900px;
