@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF9E6;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+    display: flex; 
+    align-items: center;   
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+}
+
+/* Navbar */
+.cnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    background-size: cover;
+    background-position: center;
+}
+
+.clogo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Nav links */
+.cnav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.cnav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cnav-links ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative; 
+}
+
+.cnav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline effect */
+.cnav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffbf00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.cnav-links ul li:hover::after {
+    width: 100%;
+}
+
+.cnav-links ul li a.active {
+    color: #ffbf00; /* highlight color */
+    font-weight: bold;
+    border-bottom: 2px solid #ffbf00; /* underline to match hover */
+}
+
+
+/* Home / About Us / Television Content */
+.text-box1 {
+    max-width: 900px;
+}
+
+.text-box1 h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text-box1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
