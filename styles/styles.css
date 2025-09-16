@@ -105,3 +105,28 @@ footer {
     padding: 20px;
     font-style: italic;
 }
+
+/* Nav Button */
+
+.nav-btn {
+    background-color: #fff9c4; /* Soft yellow */
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #fff176; /* Slightly deeper yellow on hover */
+    box-shadow: 0 2px 8px rgba(255, 241, 118, 0.15);
+}
+
+.nav-btn.active {
+    background-color: #ffe082; /* Distinct soft yellow for active */
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 224, 130, 0.15);
+}
