@@ -15,8 +15,9 @@
         <a href="home.html" class="clogo"><img src="images/PowerIcon.png" alt="Logo" /></a>
             <div class="cnav-links">
                 <ul>
-                    <li><a href="television.html" class="active">Television</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><button id="btnHome" class="nav-btn">Home</button></li>
+                    <li><button id="btnTelevision" class="nav-btn active">Television</button></li>
+                    <li><button id="btnAboutUs" class="nav-btn">About Us</button></li>
                 </ul>
             </div>
     </header>
@@ -37,6 +38,19 @@
     <footer>
         &copy; 2025 Elyn Cassidy. [GenAI assisted].
     </footer>
+
+     <script>
+        
+        document.getElementById('btnHome').onclick = function() {
+            window.location.href = 'home.html';
+        };
+        document.getElementById('btnTelevision').onclick = function() {
+            window.location.href = 'television.html';
+        };
+        document.getElementById('btnAboutUs').onclick = function() {
+            window.location.href = 'aboutus.html';
+        };
+    </script>
 
 </body>
 </html>

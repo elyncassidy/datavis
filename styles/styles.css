@@ -59,28 +59,6 @@ main {
     transition: color 0.3s ease;
 }
 
-/* Hover underline effect */
-.cnav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffbf00;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.cnav-links ul li:hover::after {
-    width: 100%;
-}
-
-.cnav-links ul li a.active {
-    color: #ffbf00; /* highlight color */
-    font-weight: bold;
-    border-bottom: 2px solid #ffbf00; /* underline to match hover */
-}
-
-
 /* Home / About Us / Television Content */
 .text-box1 {
     max-width: 900px;
@@ -104,4 +82,30 @@ footer {
     text-align: center;
     padding: 20px;
     font-style: italic;
+}
+
+/* Nav Button */
+
+.nav-btn {
+    background-color: #fff9c4; /* Soft yellow */
+    font-family: poppins, sans-serif;
+    color: #333;
+    border: none;
+    padding: 10px 24px;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #fff176; /* Slightly deeper yellow on hover */
+    box-shadow: 0 2px 8px rgba(255, 241, 118, 0.15);
+}
+
+.nav-btn.active {
+    background-color: #ffe082; /* Distinct soft yellow for active */
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 224, 130, 0.15);
 }
